@@ -1,1 +1,1 @@
-<h2>Hola chicos. Lo descargan, luego ponen <span>npm install</span>, para installar todos los nodos, <span>npm run dev</span> para que corra</h2>
+<p>Hola chicos. Lo descargan, luego ponen <span>npm install</span>, para installar todos los nodos, <span>npm run dev</span> para que corra</p>
