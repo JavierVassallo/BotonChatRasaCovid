@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat-AsistoCovid</title>	
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body >
+<script src="index.js"  type="text/javascript"></script>
+<div id="webchat"></div>
+<script>
+  WebChat.default.init({
+      selector: "#webchat",
+      initPayload: "/get_started",
+      interval: 1000, // 1000 ms between each message
+      customData: { "userId": "123" }, // arbitrary custom data. Stay minimal as this will be added to the socket
+      socketUrl: "https://ia-test.kunan.com.ar:49153",
+      socketPath: "/socket.io/",
+      title: "Asistente Virtual de COVID-19",
+      inputTextFieldHint: "Escribe un mensaje...",
+      connectingText: "Esperando conexión con el servidor...",
+      hideWhenNotConnected: false,
+      fullScreenMode: false,
+      params: {
+        images: {
+          dims: {
+            width: 300,
+            height: 200,
+          }
+        },
+        storage: "local"
+      },
+    })
+</script>
+</body>
+
+</html>
